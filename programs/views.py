@@ -12,7 +12,7 @@ from users.models import User
 from users.permissions import IsVerified
 
 
-def get_event(id:str):
+def get_event(id:str): # get one event
     try:
         event = Event.objects.get(id=id)
     except Event.DoesNotExist:
