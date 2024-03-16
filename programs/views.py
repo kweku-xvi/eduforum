@@ -25,7 +25,7 @@ def get_event(id:str): # get one event
     return event
 
 
-def get_user(id:str):
+def get_user(id:str): # get one user
     try:
         user = User.objects.get(id=id)
     except User.DoesNotExist:
