@@ -42,7 +42,7 @@ def get_user(id:str): # get one user
 @permission_classes([IsVerified])
 def add_event_view(request):
     if request.method == 'POST':
-        user = request.user
+        user = request.user # logged in user
 
         serializer = EventSerializer(data=request.data)
 
