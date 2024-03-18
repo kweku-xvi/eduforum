@@ -144,7 +144,7 @@ def search_events_view(request):
 
 @api_view(['PUT', 'PATCH'])
 @permission_classes([IsVerified])
-def update_event_view(request, id:str):
+def update_event_view(request, id:str): # update event details
     if request.method == 'PUT' or request.method == 'PATCH':
         user = request.user
         event = get_event(id=id)
