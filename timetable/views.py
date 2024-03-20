@@ -295,3 +295,5 @@ def delete_class_view(request, id:str):
                 'message':'Class deleted successfully'
             }, status=status.HTTP_204_NO_CONTENT
         )
+
+        
